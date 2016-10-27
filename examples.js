@@ -60,7 +60,7 @@ $(function() {
         var manifestsUri = '/manifests.json';
 
         if (isLocalhost || isGithub){
-            manifestsUri = '/examples/manifests.json';
+            manifestsUri = '/webapp/manifests.json';
         }
 
         // load manifests
@@ -716,17 +716,17 @@ $(function() {
             // built version
 
             if (!isGithub){
-                // remove '/examples' from paths
-                $('.uv').updateAttr('data-config', '/examples/', '/');
+                // remove '/webapp' from paths
+                $('.uv').updateAttr('data-config', '/webapp/', '/');
 
-                $('.uv').updateAttr('data-uri', '/examples/', '/');
+                $('.uv').updateAttr('data-uri', '/webapp/', '/');
 
                 $('#locale option').each(function() {
-                    $(this).updateAttr('value', '/examples/', '/');
+                    $(this).updateAttr('value', '/webapp/', '/');
                 });
 
                 $('#manifestSelect option').each(function() {
-                    $(this).updateAttr('value', '/examples/', '/');
+                    $(this).updateAttr('value', '/webapp/', '/');
                 });
             }
 
