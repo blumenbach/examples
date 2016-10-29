@@ -10,7 +10,7 @@
       "label": "Blumenbach Editions",
       "manifests": [
         {
-          "@id": "http://localhost:3000/api/graphs/manifest.nt?$node=test/001",
+          "@id": "http://localhost:3000/api/graphs/manifest.nt?$node=edition/0097",
           "@type": "sc:Manifest",
           "label": "Decas Sexta Collectionis Suae Craniorum Diversarum Gentium Illustrata"
         }
